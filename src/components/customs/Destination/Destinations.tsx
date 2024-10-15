@@ -25,10 +25,7 @@ const Distinations: React.FC<PropType> = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const tweenFactor = useRef(0);
-
-  const { selectedIndex, scrollSnaps, onDotButtonClick } =
-    useDotButton(emblaApi);
-
+  const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
   const {
     prevBtnDisabled,
     nextBtnDisabled,
@@ -120,7 +117,7 @@ const Distinations: React.FC<PropType> = (props) => {
                   key={index}
                   onClick={() => onDotButtonClick(index)}
                   className={`bg-muted-foreground/20  h-5 w-5 rounded-full ${
-                    index === selectedIndex ? "bg-foreground" : ""
+                    index != selectedIndex ? "" : "bg-foreground"
                   }`}
                 />
               ))}
