@@ -8,6 +8,7 @@ import { About } from "@/components/customs/About";
 import Distinations from "@/components/customs/Destination/Destinations";
 import { EmblaOptionsType } from 'embla-carousel'
 import Pricing from "@/components/customs/Pricing";
+import { Testimonials } from "@/components/customs/Testimonials";
 
 export default function Home() {
 
@@ -22,6 +23,7 @@ export default function Home() {
       <About />
       <Features />
       <Distinations slides={SLIDES} options={OPTIONS} />
+      <Testimonials />
     </>
   );
 }
