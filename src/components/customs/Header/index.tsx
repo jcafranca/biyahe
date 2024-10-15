@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import menuData from "./data";
 import { NavigationMenuDemo } from "./navigation";
+import ThemeToggle from "./ThemeToogle";
 
 const Header = () => {
   const pathUrl = usePathname();
@@ -53,7 +54,12 @@ const Header = () => {
                       className="flex flex-row py-2 gap-x-2 mr-10 font-bold"
                       href="/"
                     >
-                      <Image width={50} height={24} src="/images/logo.png" alt=""/>
+                      <Image
+                        width={50}
+                        height={24}
+                        src="/images/logo.png"
+                        alt=""
+                      />
                       <div className="flex flex-col">
                         <div className="flex flex-row">
                           <span className="text-blue-500">LOVE&nbsp;</span>8
@@ -65,7 +71,8 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center gap-2 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">             
+              <div className="absolute inset-y-0 right-0 flex items-center gap-2 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <ThemeToggle />
               </div>
             </div>
           </div>

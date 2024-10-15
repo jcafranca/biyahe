@@ -30,7 +30,7 @@ const Pricing = () => {
               </CardHeader>
               <CardContent>{pricing.paragraph}</CardContent>
               <CardFooter>
-                <Button className="bg-blue-600 hover:bg-blue-500"
+                <Button className="bg-blue-600 hover:bg-blue-500 dark:text-foreground"
                   onClick={() => {
                     pricing.btnLink;
                   }}

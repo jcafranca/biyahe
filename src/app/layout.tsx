@@ -32,14 +32,11 @@ export default function RootLayout({
         {loading ? (
           <PreLoader />
         ) : (
-          <ThemeProvider
-              attribute="class"
-              enableSystem={false}
-            >
+          <ThemeProvider attribute="class" enableSystem={false}>
               <Header />
               {children}
               <Footer />
-            </ThemeProvider>
+          </ThemeProvider>
         )}
       </body>
     </html>

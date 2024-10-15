@@ -120,7 +120,7 @@ const Distinations: React.FC<PropType> = (props) => {
                   key={index}
                   onClick={() => onDotButtonClick(index)}
                   className={`bg-muted-foreground/20  h-5 w-5 rounded-full ${
-                    index === selectedIndex ? "bg-foreground/60" : ""
+                    index === selectedIndex ? "bg-foreground" : ""
                   }`}
                 />
               ))}
