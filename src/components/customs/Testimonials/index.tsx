@@ -70,7 +70,7 @@ export const Testimonials = () => {
     <section
       ref={ref}
       id="testimonials"
-      className={`p-10 mt-20 rounded-lg bg-muted/50 ${
+      className={`p-10 mt-24 rounded-lg bg-muted/50 ${
         isVisible && "animate-scale-up"
       }`}
     >
