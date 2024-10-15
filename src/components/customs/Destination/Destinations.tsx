@@ -116,8 +116,8 @@ const Distinations: React.FC<PropType> = (props) => {
                 <DotButton
                   key={index}
                   onClick={() => onDotButtonClick(index)}
-                  className={`bg-muted-foreground/20  h-5 w-5 rounded-full ${
-                    index != selectedIndex ? "" : "bg-foreground"
+                  className={`h-5 w-5 rounded-full ${
+                    index != selectedIndex ? "bg-muted-foreground/20" : "bg-foreground"
                   }`}
                 />
               ))}
