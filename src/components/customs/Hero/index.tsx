@@ -48,7 +48,7 @@ const VideoBackground = () => {
   }, [currentVideoIndex]);
 
   return (
-    <div className="h-fit w-full">
+    <div className="h-full w-full">
       <video
         // ref={videoRef}
         src="./videos/videoplayback.mp4"
@@ -68,14 +68,14 @@ const WebsiteOverlay = () => {
   return (
     <div className="flex flex-col absolute z-10 px-10 text-white">
       <div
-        className="flex font-bold flex-col backdrop-blur-[3px] my-auto bg-current/5 max-w-[38rem] p-4 items-center mt-28 rounded-3xl"
+        className="flex font-bold flex-col backdrop-blur-[3px] my-auto bg-current/5 max-w-[38rem] p-4 items-start mt-28 rounded-3xl"
         style={{
           boxShadow: `0 4px 20px rgba(0, 0, 0, 0.1)`,
         }}
       >
-        <h1 className="uppercase text-8xl">
+        <h1 className="uppercase text-2xl md:text-8xl">
           Never stop
-          <p className="uppercase text-5xl mb-6">Exploring the world</p>
+          <p className="uppercase text-sm md:text-5xl mb-6">Exploring the world</p>
         </h1>
         <div className="mb-6 grid grid-flow-col gap-x-2">
           <MapPin />
@@ -98,7 +98,7 @@ const WebsiteOverlay = () => {
 
 const Hero = () => {
   return (
-    <div className="hidden lg:flex">
+    <div className="lg:flex">
       <WebsiteOverlay />
       <VideoBackground />
     </div>
